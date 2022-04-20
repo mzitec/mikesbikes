@@ -1,0 +1,79 @@
+<!--Michael Zarnoth 
+ITEC236
+Tested on 3/16/2022 @ 2:47pm. Finished on 3/16/2022 2:50pm
+Lab #4
+--->
+
+<!DOCTYPE html>
+<!-- Website Header -->
+<head>
+
+    <title>Mike's Bikes</title>
+
+    <link rel="stylesheet" type="text/css" href="Styles/Main.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickNav.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script src="js/jquery.slicknav.min.js"></script> 
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+        }); 
+    </script>
+
+    <meta name="description" content="your best local bike shop"> <meta name="keywords" content="Mikes, bikes, cycle, road bikes">
+
+</head>
+
+    <body class="index">
+        <header>
+<!--Graphic Path and rollover-->
+    
+    <figure class="mb">
+        <img class='mb' src="Images/MB_Logo.PNG">
+        <img class='mb_long' src="Images/mb_long.PNG">
+    </figure>
+
+
+<!--Audio Track-->
+    <audio controls autoplay hidden>
+        <source src = "audio/transition.wav" type="audio/wav">
+    </audio>
+    
+</header>
+<!--begining of the website content-->
+            <h1>Mike's Bikes</h1>
+<!--Navigation-->
+            <nav id="mobile_menu"></nav> 
+            <nav id="nav_menu"> 
+            <ul>
+                <li><a href="./sales.html">Sales</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+            </ul>
+            </nav>
+       
+<!--targeted audience message + bundle deal message-->
+            <h3>Only the Best!</h3> 
+            <p>Stop by Mike's Bikes for all your bike needs!</p>
+            <p>Check out our bundle deals!</p>
+            <p>We have bikes for all price brackets!</p>
+            <p>Contact Mike:</p> <address>1-800-Mike's-Bikes<br>
+<!--End of Technicals-->
+<pre>
+Store Address:
+
+Mike's Bikes
+139 Mike's Drive
+Carbondale
+IL, 62901
+
+<!--name and university-->
+Michael Zarnoth
+Southern Illinois University
+Date Developed: 1/28/2022
+Date Tested: 1/28/2022
+</pre>
+    </body>
+</html>
+
