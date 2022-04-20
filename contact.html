@@ -1,0 +1,110 @@
+<!--Michael Zarnoth 
+ITEC236
+Tested on 4/2/2022 @ 8:32pm. Finished on 4/2/2022 8:32pm
+Lab #4
+--->
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Styles/Main.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickNav.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script src="js/jquery.slicknav.min.js"></script> 
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+        }); 
+    </script>
+
+
+
+
+    <title>Mike's Contact</title>
+    <link rel="stylesheet" type="text/css" href="Styles/Main.css" />
+</head>
+
+<!--Graphic Path and rollover-->
+<figure class="mb">
+    <img class='mb' src="Images/MB_Logo.PNG">
+    <img class='mb_long' src="Images/mb_long.PNG">
+</figure>
+
+<header class = "center">
+    <h1> 
+        Contact Information
+    </h1>
+
+<!--Navigation-->
+    <nav id="mobile_menu"></nav> 
+    <nav id="nav_menu"> 
+<!--Page Links-->
+
+    <ul id="menu">
+        <li><a href="./Index.html">Home</a></li>
+        <li><a href="./Sales.html">Sales</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./rentals.html">Rentals</a></li>
+    </ul>
+    </nav>
+</header>
+
+<body class="contact_form">
+    <h1>Contact form</h1>
+    <form name="contact" action="form_data.html" method="get">
+
+    <h2>Contact Information</h2>
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" autofocus required><br>
+
+        <label for="Password">Password:</label>
+        <input type="password" name="password" id="password" required><br>
+
+        <label for="Full Name">Full Name:</label>
+        <input type="name" name="name" id="name" required><br>
+
+    <h2>Location</h2>
+        <label for="Address">Address:</label>
+        <input type="address" name="address" id="address" required><br>
+
+        <label for="city">City:</label>
+        <input type="city" name="city" id="city" required><br>
+
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state" required placeholder="Two Characters"
+            pattern="[A-Za-z]{2}" title="must be 2 characters"><br>
+        
+        <label for="zip">Zip Code:</label>
+        <input type="text" name="zip" required placeholder="Five Digits"
+            pattern="\d{5}" title="Must be 99999"><br>
+
+        <label for="phone number">Phone Number:</label>
+        <input type="text" name="number" id="number"><br>
+
+    <h2>Additional Information</h2>
+        <label for="Date">Date:</label>
+        <input type="Date" name="Date" id="Date"><br>
+
+        <label for="message">Message:</label>
+        <input type="message" name="message" id="message"><br>
+
+    <h2>Type of Inquiry</h2>
+        <input type="checkbox" name="question" id="question" value="question">
+        <label for="question">Question</label><br>
+
+        <input type="checkbox" name="comment" id="comment" value="comment">
+        <label for="comment">Comment</label><br>
+
+    <h2>Item Type</h2>
+    
+    <input type="checkbox" name="Road Bike" id="Road Bike" value="Road Bike">
+    <label for="Road Bike">Road Bike</label><br>
+
+    <input type="checkbox" name="Mountain Bike" id="Mountain Bike" value="Mountain Bike">
+    <label for="Mountain Bike">Mountain Bike</label><br>
+
+    <input type="checkbox" name="Other" id="Other" value="Other">
+    <label for="Other">Other</label><br>
+
+    <input type="submit" name="register" id="button" value="submit">
+    <input type="reset" name="reset" id="reset">
+    </form>
+</body>
